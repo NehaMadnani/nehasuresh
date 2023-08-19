@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neha Suresh</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEz4dKg.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc0CsE.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xGIzc.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc0CsE.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic0CsE.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc0CsE.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxGIzc.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fChc9.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype')
+      }
+
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfChc9.ttf) format('truetype')
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+        letter-spacing: .1em
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-weight: 400
+      }
+
+      a,
+      a:link,
+      a:visited {
+        color: #fff;
+        text-decoration: none
+      }
+
+      body {
+        color: #fff;
+        font-family: Roboto;
+        line-height: 1.6;
+        background: #000
+      }
+
+      .footer,
+      .header {
+        display: flex;
+        padding: 50px
+      }
+
+      .top-nav {
+        display: flex;
+        width: 50%
+      }
+
+      .top-nav .name {
+        font-weight: 600;
+        margin-left: 2rem
+      }
+
+      .top-nav .active {
+        color: #aefeff !important
+      }
+
+      .top-nav .name .first-name {
+        color: hsla(0, 0%, 100%, .65)
+      }
+
+      .main-section {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center
+      }
+
+      .small-intro {
+        align-self: center;
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: center
+      }
+
+      .small-intro-desc {
+        align-self: center;
+        font-size: 1.2rem;
+        font-weight: normal;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+      }
+      .desc-section {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        width: 90%
+      }
+
+      .desc-section span.cursor {
+        display: inline-block;
+        background-color: #ccc;
+        margin-left: .1rem;
+        width: 3px;
+        animation: 1s infinite blink
+      }
+
+      .social-svg {
+        width: 20px;
+        height: 20px;
+        filter: invert(1)
+      }
+
+      @keyframes blink {
+        0% {
+          background-color: #ccc
+        }
+
+        49% {
+          background-color: #ccc
+        }
+
+        50% {
+          background-color: transparent
+        }
+
+        99% {
+          background-color: transparent
+        }
+
+        to {
+          background-color: #ccc
+        }
+      }
+
+      .color-light {
+        color: #aefeff !important
+      }
+
+      @media screen and (min-width:800px) {
+        .footer {
+          padding: 0;
+          position: fixed;
+          bottom: 50px;
+          left: 50px;
+          right: 50px;
+          width: auto;
+          height: 1px;
+          z-index: 99
+        }
+
+        .footer .soc-box {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          float: right;
+          width: 24px
+        }
+
+        .follow-label {
+          padding-right: 75px;
+          position: absolute;
+          bottom: 100%;
+          right: 0;
+          font-size: 14px;
+          line-height: 24px;
+          height: 24px;
+          white-space: nowrap;
+          transform-origin: 100% 0;
+          text-align: right;
+          transform: rotate(90deg)
+        }
+
+        .follow-label:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 50px;
+          height: 1px;
+          background: #fff
+        }
+
+        .footer .soc a {
+          display: block;
+          margin-bottom: 20px;
+          text-align: center;
+          color: #bbb
+        }
+
+        .footer .contact-me {
+          position: absolute;
+          left: 0;
+          bottom: 0
+        }
+      }
+
+      @media screen and (max-width:1440px) {
+        .header {
+          padding: 50px 50px 40px
+        }
+      }
+
+      @media screen and (max-width:1300px) {
+        html {
+          font-size: 14px
+        }
+
+        .avatar {
+          width: 40%;
+          margin-left: 0
+        }
+
+        .avatar img {
+          height: 500px
+        }
+
+        .small-intro {
+          margin-bottom: 15%;
+          width: 50%
+        }
+
+        .header {
+          padding: 25px 50px 50px
+        }
+      }
+
+      @media screen and (max-width:850px) {
+        html {
+          font-size: 14px
+        }
+
+        .avatar {
+          width: 100%
+        }
+
+        .avatar img {
+          width: 70%;
+          height: auto
+        }
+
+        .small-intro {
+          margin-left: 0;
+          width: 100%
+        }
+
+        .footer {
+          right: 10px
+        }
+
+        .contact-me {
+          display: none
+        }
+      }
+
+      @media screen and (max-width:425px) {
+        .header {
+          padding: 30px 15px;
+          flex-direction: column;
+          align-items: center
+        }
+
+        .top-nav {
+          width: auto
+        }
+
+        .top-left-nav {
+          margin-top: 10px
+        }
+
+        .top-nav .name {
+          margin-left: 1.2rem
+        }
+
+        .desc-section {
+          font-size: 1.4rem;
+          width: 100%
+        }
+
+        .footer {
+          flex-direction: column;
+          align-items: center
+        }
+
+        .footer .soc-box {
+          margin-top: 2rem
+        }
+
+        .footer .soc-box a:not(:last-child) {
+          margin-right: 2rem
+        }
+
+        .follow-label {
+          display: none
+        }
+      }
+    </style>
+    <link rel="preload" id="cvio-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext" type="text/css" media="all" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" id="cvio-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+    </noscript>
+    <link href="/static/css/styles-9e629eaabf.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link href="/static/css/styles-9e629eaabf.css" rel="stylesheet">
+    </noscript>
+    <script>
+      ! function(n) {
+        "use strict";
+        n.loadCSS || (n.loadCSS = function() {});
+        var t, o = loadCSS.relpreload = {};
+        o.support = function() {
+          var e;
+          try {
+            e = n.document.createElement("link").relList.supports("preload")
+          } catch (t) {
+            e = !1
+          }
+          return function() {
+            return e
+          }
+        }(), o.bindMediaToggle = function(t) {
+          var e = t.media || "all";
+
+          function a() {
+            t.addEventListener ? t.removeEventListener("load", a) : t.attachEvent && t.detachEvent("onload", a), t.setAttribute("onload", null), t.media = e
+          }
+          t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a), setTimeout(function() {
+            t.rel = "stylesheet", t.media = "only x"
+          }), setTimeout(a, 3e3)
+        }, o.poly = function() {
+          if (!o.support())
+            for (var t = n.document.getElementsByTagName("link"), e = 0; e < t.length; e++) {
+              var a = t[e];
+              "preload" !== a.rel || "style" !== a.getAttribute("as") || a.getAttribute("data-loadcss") || (a.setAttribute("data-loadcss", !0), o.bindMediaToggle(a))
+            }
+        }, o.support() || (o.poly(), t = n.setInterval(o.poly, 500), n.addEventListener ? n.addEventListener("load", function() {
+          o.poly(), n.clearInterval(t)
+        }) : n.attachEvent && n.attachEvent("onload", function() {
+          o.poly(), n.clearInterval(t)
+        })), "undefined" != typeof exports ? exports.loadCSS = loadCSS : n.loadCSS = loadCSS
+      }("undefined" != typeof global ? global : this);
+    </script>
+  </head>
+  <body class="home">
+    <header class="header">
+      <nav class="top-nav">
+        <a class="name" href="/">
+          <span class="first-name">Neha</span>
+          <span>Suresh</span>
+        </a>
+      </nav>
+      <nav class="top-nav top-left-nav">
+        <a class="name active" href="/">
+          <span>Home</span>
+        </a>
+        <a class="name" href="https://medium.com/@mailnehasuresh">
+          <span>Blogs</span>
+        </a>
+        <!-- <a class="name" href="/talks">
+          <span>Talks</span>
+        </a>
+        <a class="name" href="/projects">
+          <span>Projects</span>
+        </a> -->
+        <!-- <a class="name" href="/about">
+          <span>About</span>
+        </a> -->
+      </nav>
+    </header>
+    <section class="main-section">
+      <div class="avatar">
+        <img src="/static/n-image.jpeg" alt="Neha Suresh | N letter image">
+      </div>
+      <div class="small-intro">Hello <br>I'm <span class="color-light">Neha Suresh </span>,a Grad student at Carnegie Mellon University <div></div>
+      <br>
+      <div class="small-intro-desc">I have over 5 years of software engineering experience in the Indian SaaS company, <span class="color-light">Zoho </span>, where I worked on the accounting solution, Zoho Books. I code in Ember, React, Vanilla JS and Java. <div></div>
+
+      </div>
+    </section>
+    <section class="desc-section">
+      <span id="typed-text"></span>
+      <span id="typed-text-color" class="color-light" style="margin-left:1rem"></span>
+      <span id="cursor" class="cursor">&nbsp;</span>
+    </section>
+    <footer class="footer">
+      <div class="contact-me">
+        <a target="_blank" href="mailto:mailnehasuresh@gmail.com">Email: mailnehasuresh@gmail.com</a>
+      </div>
+      <div class="soc-box">
+        <div class="follow-label">Follow Me</div>
+        <div class="soc">
+          <a target="_blank" href="https://www.linkedin.com/in/nehasuresh1904/">
+            <img src="/static/svgs/linkedin.svg" class="social-svg">
+          </a>
+          <a target="_blank" href="https://github.com/NehaMadnani">
+            <img src="/static/svgs/github.svg" class="social-svg">
+          </a>
+          <a target="_blank" href="https://medium.com/@mailnehasuresh">
+            <img src="/static/svgs/twitter.svg" class="social-svg">
+          </a>
+          <a target="_blank" href="mailto:mailnehasuresh@gmail.com">
+            <img src="/static/svgs/email.svg" class="social-svg">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/static/js/typing-78796dd6fc.js"></script>
+</html>
