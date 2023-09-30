@@ -32,6 +32,11 @@
       border-radius: 50%;
       margin: auto;
     }
+    .menu{
+      float: right;
+      color: #000;
+      font-weight: 400;
+    }
 
     .name-title {
       font-weight: 800;
@@ -65,8 +70,11 @@
       line-height: 1.7;
     }
     .external-links {
-      width: 80%;
+      width: 40%;
       margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
     .social-svg {
       width: 30px;
@@ -75,7 +83,11 @@
     }
     .social-svg:hover {
       cursor: cursor-pointer;
-      background: #efefef;
+      background: #eee;
+      width: 32px;
+      height:32px;
+      transition: 0.3s ease;
+
     }
     .animate-charcter
     {
@@ -85,7 +97,7 @@
         #231557 0%,
         #44107a 29%,
         #ff1361 67%,
-        #fff800 100%
+        #ff1700 100%
       );
       background-size: auto auto;
       background-clip: border-box;
@@ -114,6 +126,9 @@
   <body>
 
     <div class="outer-blank-space">
+      <div class="menu">
+        <a target="_blank" href="https://medium.com/@mailnehasuresh">Blog</a>
+      </div>
       <div class="quote animate-charcter"> In a world where you can be anything be kind!</div>
     </div>
     <div class="profile">
@@ -149,6 +164,15 @@
         <img src="static/email.svg" class="social-svg">
       </a>
     </div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQR3HN7MVY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SQR3HN7MVY');
+    </script>
 
   </body>
 
